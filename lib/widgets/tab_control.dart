@@ -14,7 +14,7 @@ class _TabControlState extends State<TabControl>
     with SingleTickerProviderStateMixin {
   late TabController _tabController;
 
-  @override
+  @override //
   void initState() {
     super.initState();
     _tabController = widget.controller ?? TabController(length: 3, vsync: this);
@@ -43,6 +43,7 @@ class _TabControlState extends State<TabControl>
         ),
         Tab(text: "Verb"),
         Tab(text: "Synonyms"),
+        Tab(text: "hi"),
       ],
     );
   }
